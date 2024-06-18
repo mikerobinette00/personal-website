@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* https://www.color-hex.com/color-palette/1047160 */
+    --color-primary: #005C78;
+    --color-secondary: #E88D67;
+    --text-primary: #FFFAE6;
+    --text-secondary: #005C78;
+
+    color: var(--text-primary);
+    background-color: var(--color-secondary);
+} 
+
+main {
+    width: 60%;
+
+    padding: 4em 0 2em;
+
+    margin: auto;
+}
+
+.content {
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-secondary);
+}
+
+#landing-page {
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+
+    background: var(--color-primary);
+}
+#landing-title{
+    z-index: 9;
+
+    margin: 0;
+    position: absolute;
+    width: fit-content;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+#landing-title>h1 {
+    margin: 0;
+
+    font-size: 4em;
+}
+#landing-title>h2 {
+    margin: 0;
+
+    font-size: 2em;
+}
+#name {
+    color: #eb6424;
+}
+#title {
+    color: #eb6424;
+}
+
+.text-gradient {
+    /* background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 400%; */
+    background-position: 0%;
+    /* animation: name-title-animation 5s infinite alternate; */
+}
+
+@keyframes name-title-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+.header {
+    font-size: 1.8em;
+}
+.subheader {
+    font-size: 1.5em;
+}
+p {
+
+    font-size: 1.3em;
+}
+
+
+#footer {
+    position: relative;
+    height: 9vh;
+}
+
+#footer div {
+    position: absolute;
+    width: fit-content;
+
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 0px;
+
+    margin-top: auto;
+    margin: auto;
+}
+
+#footer div>a {
+    padding: .4em;
+
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#footer div>a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

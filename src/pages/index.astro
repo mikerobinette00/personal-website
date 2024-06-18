@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LandingEffectController from "../components/LandingEffectController"
+import Portfolio from "../components/Portfolio";
+import Navbar from "../components/Navbar";
+
+import "../styles/style.css";
+---
+
+<Layout title="My Portfolio">
+	
+	<!-- NOTE: the navigation bar at the top of the page -->
+	<Navbar client:only="react" />
+
+	<!-- NOTE: the landing page -->
+	<div id="landing-page">
+		<section id="landing-title">
+			<h1><span id="name" class="text-gradient">MICHAEL ROBINETTE</span></h1>
+			<h2><span id="title" class="text-gradient">EMBEDDED ENGINEER</span></h1>	
+		</section>
+
+		<!-- applies an effect to the landing page -->
+		<LandingEffectController client:only="react" />
+	</div>
+
+	<main>
+		<!-- NOTE: an about me page -->
+		 <section id="about-me" class="content">
+			<h2 class="header">ABOUT ME</h2>
+			<p>
+				My name is Michael Robinette.  I love learning and digging for answers when I 
+				don't know how to do something.  In my free time I enjoy starting new projects 
+				based around 3D printing or microcontrollers.  I find my interests tend to veer towards
+				autonomous applications centered in robotics and drones, but I believe in doing my best
+				in all personal and professional pursuits.  I am interested in work that will keep me on
+				my toes and busy.
+			</p>
+			<h3 class="subheader">SKILLS</h3>
+			<p>
+				<strong>Programming Languages:</strong> C, C#, ARM Assembly, Python, MATLAB, Batch Scripting
+				<br />
+				<br />
+				<strong>Technical Skills:</strong> Embedded Systems, CAD, Soldering, PCB Design, Technical Writing
+			</p>
+			<h3 class="subheader">EDUCATION</h3>
+			<p>
+				<strong>Purdue University:</strong> 2019-2024, Bachelors in Computer Engineering
+				<br />
+				<br />
+				<strong>Heritage Christian School:</strong> 2006-2019, Highschool Diploma
+			</p>
+		 </section>
+
+		 <!-- NOTE: a grid of all projects in my portfolio -->
+		<section id="portfolio" class="content">
+			<h2>Portfolio</h2>
+			<Portfolio client:only="react" />
+		</section>
+
+		 <!-- NOTE: the "footer" of the site -->
+		<section id="footer" class="content">
+			<div>
+				<a href="https://github.com/mikerobinette00" target="_blank">Github</a>
+				|
+				<a href="https://www.linkedin.com/in/mikerobinette00/" target="_blank">LinkedIn</a>
+				|
+				<a href="mailto:mikerobinette00@gmail.com" target="_blank">Email</a>
+			</div>
+		</section>
+	</main>
+</Layout>
+

@@ -2,15 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import LandingEffectController from "../components/LandingEffectController"
 import Portfolio from "../components/Portfolio";
-import Navbar from "../components/Navbar";
-
 import "../styles/style.css";
 ---
 
 <Layout title="My Portfolio">
 	
 	<!-- NOTE: the navigation bar at the top of the page -->
-	<Navbar client:only="react" />
 
 	<!-- NOTE: the landing page -->
 	<div id="landing-page">

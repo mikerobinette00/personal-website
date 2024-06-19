@@ -8,15 +8,30 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
+├── .github/workflows
+│   └── astro.yml
 ├── public/
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── Card.astro
+│   │   ├── LandingEffectController.tsx
+│   │   ├── Portfolio.tsx
+│   │   ├── PortfolioCard.tsx
+│   │   └── Topic.tsx
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
 │       └── index.astro
+├── resources/
+│   └── data.json
+├── styles/
+│   ├── LandingEffects/
+│   │   └── style.css
+│   ├── portfolio.css
+│   ├── portfolioCard.css
+│   ├── style.css
+│   └── topic.css
 └── package.json
 ```
 

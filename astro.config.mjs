@@ -5,6 +5,6 @@ import react from "@astrojs/react";
 //
 export default defineConfig({
   integrations: [react()],
-  site: 'https://mikerobinette00.github.io',
+  site: 'https://mikerobinette.net',
   base: '/personal-website',
 });

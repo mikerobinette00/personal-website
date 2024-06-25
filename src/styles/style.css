@@ -3,10 +3,15 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     /* https://www.color-hex.com/color-palette/1047160 */
-    --color-primary: #005C78;
+    /* --color-primary: #005C78;
     --color-secondary: #E88D67;
     --text-primary: #FFFAE6;
-    --text-secondary: #005C78;
+    --text-secondary: #005C78; */
+
+    --color-secondary: #005C78;
+    --color-primary: #E88D67;
+    --text-secondary: #FFFAE6;
+    --text-primary: #005C78;
 
     color: var(--text-primary);
     background-color: var(--color-secondary);

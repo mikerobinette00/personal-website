@@ -10,8 +10,8 @@ body {
 
     --color-secondary: #005C78;
     --color-primary: #E88D67;
-    --text-secondary: #FFFAE6;
-    --text-primary: #005C78;
+    --text-secondary: #fcfcfc;
+    --text-primary: #FFFAE6;
 
     color: var(--text-primary);
     background-color: var(--color-secondary);
@@ -72,10 +72,12 @@ h6 {
     font-size: 2em;
 }
 #name {
-    color: #eb6424;
+    /* color: #eb6424; */
+    color: #005C78;
 }
 #title {
-    color: #eb6424;
+    /* color: #eb6424; */
+    color: #005C78;
 }
 
 .text-gradient {
